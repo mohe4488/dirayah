@@ -1,0 +1,110 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+header .logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* تنسيق نموذج تسجيل الدخول */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* تنسيق خيار "مستخدم جديد" */
+p {
+    margin-top: 15px;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* رابط العودة إلى الصفحة الرئيسية */
+p a:last-child {
+    margin-top: 20px;
+    display: block;
+    font-size: 16px;
+    color: #007bb5;
+}
+
+p a:last-child:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق الفوتر */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 50px;
+}

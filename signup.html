@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">دراية</div>
+    </header>
+
+    <main>
+        <section id="signup">
+            <h1>إنشاء حساب جديد</h1>
+            <form id="signupForm">
+                <label for="newUsername">اسم المستخدم:</label>
+                <input type="text" id="newUsername" name="newUsername" required><br>
+                
+                <label for="newEmail">البريد الإلكتروني:</label>
+                <input type="email" id="newEmail" name="newEmail" required><br>
+                
+                <label for="newPassword">كلمة المرور:</label>
+                <input type="password" id="newPassword" name="newPassword" required><br>
+                
+                <label for="confirmPassword">تأكيد كلمة المرور:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+                
+                <button type="submit">إنشاء الحساب</button>
+            </form>
+            <p>هل لديك حساب؟ <a href="login.html">تسجيل الدخول</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 موقع دراية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="signup.js"></script>
+</body>
+</html>

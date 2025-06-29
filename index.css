@@ -1,0 +1,114 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4CAF50, #0099cc); /* خلفية ممزوجة بين الأزرق والأخضر */
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* تنسيق الـ Header */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* خلفية داكنة لتمييز الشعار */
+    color: white;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+header .logo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* قائمة التنقل */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    font-size: 48px;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* تأثير الظل */
+}
+
+/* النص أسفل العنوان */
+#home p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* الأزرار */
+.actions {
+    margin-top: 30px;
+}
+
+.actions .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+}
+
+.actions .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* تأثير تكبير عند التمرير */
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+/* تأثيرات على العناوين والأزرار */
+h1, .btn {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* حركة الظهور التدريجي */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

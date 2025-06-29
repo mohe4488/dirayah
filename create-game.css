@@ -1,0 +1,120 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* العنوان */
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* الحاوية الخاصة بالفئات */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* عرض مرن للفئات */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* محاذاة العناصر في الوسط */
+}
+
+/* تنسيق الفئات */
+.category-card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #0099cc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* تأثير رفع عند التمرير */
+    background-color: #007bb5; /* تغيير اللون عند التمرير */
+}
+
+.category-card.selected {
+    background-color: #66ccff; /* تغيير اللون عند التحديد */
+}
+
+/* صورة الفئة */
+.category-icon {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* نص الفئة */
+.category-card p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* زر "إضافة لعبة" */
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* تأثير hover على الزر */
+}
+
+button:disabled {
+    background-color: #ccc; /* عند تعطيل الزر */
+}
+
+/* تنسيق الفوتر */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 50px;
+}

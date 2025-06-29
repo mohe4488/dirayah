@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء لعبة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create-game.css">
+</head>
+<body>
+    <header>
+        <div class="logo">دراية - إنشاء لعبة</div>
+    </header>
+
+    <main>
+        <section id="categories">
+            <h1>اختر الفئات</h1>
+            <div class="category-container">
+                <!-- فئة 1 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category1">
+                    <div class="category-icon" style="background-image: url('image1.jpg');"></div>
+                    <p>كلية العلوم الحياتية</p>
+                </label>
+                
+                <!-- فئة 2 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category2">
+                    <div class="category-icon" style="background-image: url('image2.jpg');"></div>
+                    <p>كلية الهندسة والبترول</p>
+                </label>
+
+                <!-- فئة 3 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category3">
+                    <div class="category-icon" style="background-image: url('image3.jpg');"></div>
+                    <p>كلية العلوم</p>
+                </label>
+
+                <!-- فئة 4 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category4">
+                    <div class="category-icon" style="background-image: url('image4.jpg');"></div>
+                    <p>كلية الآداب</p>
+                </label>
+
+                <!-- فئة 5 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category5">
+                    <div class="category-icon" style="background-image: url('image5.jpg');"></div>
+                    <p>كلية الشريعة</p>
+                </label>
+
+                <!-- فئة 6 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category6">
+                    <div class="category-icon" style="background-image: url('image6.jpg');"></div>
+                    <p>كلية الحقوق</p>
+                </label>
+
+                <!-- فئة 7 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category7">
+                    <div class="category-icon" style="background-image: url('image7.jpg');"></div>
+                    <p>كلية الطب</p>
+                </label>
+
+                <!-- فئة 8 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category8">
+                    <div class="category-icon" style="background-image: url('image8.jpg');"></div>
+                    <p>كلية العلوم الإدارية</p>
+                </label>
+
+                <!-- فئة 9 -->
+                <label class="category-card">
+                    <input type="checkbox" class="category" id="category9">
+                    <div class="category-icon" style="background-image: url('image9.jpg');"></div>
+                    <p>كلية التربية</p>
+                </label>
+            </div>
+
+            <!-- حقل لاسم اللعبة -->
+            <div>
+                <label for="gameName">اسم اللعبة:</label>
+                <input type="text" id="gameName" placeholder="أدخل اسم اللعبة">
+            </div>
+
+            <!-- حقل لاسم الفريق الأول -->
+            <div>
+                <label for="team1">اسم الفريق الأول:</label>
+                <input type="text" id="team1" placeholder="أدخل اسم الفريق الأول">
+            </div>
+
+            <!-- حقل لاسم الفريق الثاني -->
+            <div>
+                <label for="team2">اسم الفريق الثاني:</label>
+                <input type="text" id="team2" placeholder="أدخل اسم الفريق الثاني">
+            </div>
+
+            <!-- زر "ابدأ اللعبة" -->
+            <button id="addGameButton" disabled>ابدأ اللعبة</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 موقع دراية. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="create-game.js"></script>
+</body>
+</html>
